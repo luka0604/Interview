@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>scratch_5.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+scratch_5.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.io.BufferedReader</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.io.IOException</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.io.InputStreamReader</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">class </span><span class="s1">Scratch {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s1">String tekst</span><span class="s0">;</span>
+        <span class="s1">String tekstNaopako = </span><span class="s2">&quot;&quot;</span><span class="s0">;</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Upišite tekst kojeg želite provjeriti da li je palindrom : &quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">tekst = scanner.nextLine()</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">length = tekst.length()</span><span class="s0">;</span>
+        <span class="s0">for </span><span class="s1">( </span><span class="s0">int </span><span class="s1">i = length - </span><span class="s3">1</span><span class="s0">; </span><span class="s1">i &gt;= </span><span class="s3">0</span><span class="s0">; </span><span class="s1">i-- )</span>
+            <span class="s1">tekstNaopako = tekstNaopako + tekst.charAt(i)</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(tekst.equals(tekstNaopako)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Tekst je palindorm &quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Tekst nije palindrom&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
